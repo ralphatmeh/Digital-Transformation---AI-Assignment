@@ -1,274 +1,280 @@
-!DOCTYPE html
-html lang=en
-head
-  meta charset=UTF-8 
-  titleLime Lift – FrostyFuel®title
-  meta name=viewport content=width=device-width, initial-scale=1 
-  link
-    href=httpscdn.jsdelivr.netnpmbootstrap@5.3.3distcssbootstrap.min.css
-    rel=stylesheet
-  
-  style
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lime Lift – FrostyFuel®</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
     body {
-      font-family system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
-      background #f7fbff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+      background: #f7fbff;
     }
 
     .navbar {
-      background #ffffffcc;
-      backdrop-filter blur(10px);
+      background: #ffffffcc;
+      backdrop-filter: blur(10px);
     }
 
     .hero-flavor {
-      padding 6rem 0 4rem;
-      color #fff;
+      padding: 6rem 0 4rem;
+      color: #fff;
     }
 
     .hero-lime {
-      background linear-gradient(135deg, #c4f000, #e4ffb5);
+      background: linear-gradient(135deg, #c4f000, #e4ffb5);
     }
 
     .hero-tag {
-      font-size 0.85rem;
-      letter-spacing 0.08em;
-      text-transform uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
     .hero-title {
-      font-weight 800;
-      font-size 2.6rem;
+      font-weight: 800;
+      font-size: 2.6rem;
     }
 
     .hero-subtitle {
-      font-size 1.05rem;
-      max-width 520px;
+      font-size: 1.05rem;
+      max-width: 520px;
     }
 
     .img-placeholder {
-      width 100%;
-      min-height 260px;
-      border-radius 1.5rem;
-      background rgba(255, 255, 255, 0.18);
-      border 1px dashed rgba(255, 255, 255, 0.6);
-      display flex;
-      align-items center;
-      justify-content center;
-      color #fff;
-      text-align center;
-      padding 1.5rem;
-      font-size 0.95rem;
+      width: 100%;
+      min-height: 260px;
+      border-radius: 1.5rem;
+      background: rgba(255,255,255,0.18);
+      border: 1px dashed rgba(255,255,255,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.95rem;
     }
 
     .section-title {
-      font-weight 700;
-      font-size 1.6rem;
+      font-weight: 700;
+      font-size: 1.6rem;
     }
 
     .card {
-      border-radius 1rem;
-      border none;
-      box-shadow 0 10px 26px rgba(15, 23, 42, 0.08);
+      border-radius: 1rem;
+      border: none;
+      box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
     }
 
     footer {
-      background #0f172a;
-      color #e5e7eb;
-      padding 2rem 0 1rem;
-      margin-top 3rem;
+      background: #0f172a;
+      color: #e5e7eb;
+      padding: 2rem 0 1rem;
+      margin-top: 3rem;
     }
 
     footer a {
-      color #a5b4fc;
-      text-decoration none;
+      color: #a5b4fc;
+      text-decoration: none;
     }
 
-    footer ahover {
-      text-decoration underline;
+    footer a:hover {
+      text-decoration: underline;
     }
 
     .nutri-badge {
-      border-radius 999px;
-      padding 0.35rem 0.9rem;
-      font-size 0.85rem;
-      background #f9fafb;
+      border-radius: 999px;
+      padding: 0.35rem 0.9rem;
+      font-size: 0.85rem;
+      background: #f9fafb;
     }
-  style
-head
-body
-  !-- NAVBAR --
-  nav class=navbar navbar-expand-lg fixed-top shadow-sm
-    div class=container
-      a class=navbar-brand fw-bold d-flex align-items-center href=index.html
-        span class=me-2 rounded-circle d-inline-flex justify-content-center align-items-center
-              style=width 36px; height 36px; background #111827; color #fff; font-size 0.9rem;
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <span class="me-2 rounded-circle d-inline-flex justify-content-center align-items-center"
+          style="width: 36px; height: 36px; background: #111827; color: #fff; font-size: 0.9rem;">
           FF
-        span
-        FrostyFuelspan class=ms-1&reg;span
-      a
-      button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navMenu
-        span class=navbar-toggler-iconspan
-      button
+        </span>
+        FrostyFuel<span class="ms-1">&reg;</span>
+      </a>
 
-      div class=collapse navbar-collapse id=navMenu
-        ul class=navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2
-          li class=nav-itema class=nav-link href=index.html#flavoursAll Flavoursali
-        ul
-      div
-    div
-  nav
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  !-- HERO --
-  section class=hero-flavor hero-lime
-    div class=container
-      div class=row align-items-center g-4
-        div class=col-lg-6
-          span class=hero-tag fw-semibold d-inline-flex align-items-center mb-3
-            span class=me-2 rounded-circle style=width12px;height12px;background#fff;span
-            Lime Lift • White  Lime
-          span
-          h1 class=hero-title mb-3Lime Lifth1
-          p class=hero-subtitle mb-4
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#flavours">All Flavours</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-flavor hero-lime">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="hero-tag fw-semibold d-inline-flex align-items-center mb-3">
+            <span class="me-2 rounded-circle" style="width:12px;height:12px;background:#fff;"></span>
+            Lime Lift • White Lime
+          </span>
+
+          <h1 class="hero-title mb-3">Lime Lift</h1>
+
+          <p class="hero-subtitle mb-4">
             Tangy lime and velvet dark chocolate combine for a refreshing, icy protein
             lift that satisfies your sweet and healthy craving.
-          p
-          div class=d-flex flex-wrap gap-2 mb-4
-            span class=nutri-badge~280 kcal  100gspan
-            span class=nutri-badge20g protein  100gspan
-            span class=nutri-badgeZesty lime profilespan
-          div
-          a href=index.html class=btn btn-light btn-sm rounded-pill me-2 mb-2
-            ← Back to Home
-          a
-          a href=#ingredients class=btn btn-outline-light btn-sm rounded-pill mb-2
-            View ingredients
-          a
-        div
-        div class=col-lg-6
-          !-- Replace with your product image --
-          div class=img-placeholder
-            p class=mb-0
-              Product image goes here.br
-              Replace this box with an &lt;img&gt; of your Lime Lift bar.
-            p
-          div
-        div
-      div
-    div
-  section
+          </p>
 
-  !-- CONTENT --
-  main class=py-5
-    div class=container
-      !-- Ingredients --
-      section id=ingredients class=mb-5
-        h2 class=section-title mb-3Ingredientsh2
-        div class=row g-4
-          div class=col-md-6
-            div class=card h-100
-              div class=card-header bg-success text-white
-                h5 class=mb-0Inner Ice Cream Layerh5
-              div
-              div class=card-body
-                ul class=mb-0
-                  li1 part frozen stronglime puréestrong (for colour and flavour)li
-                  li1 part high-quality Greek yogurt or coconut creamli
-                  li12 part vanilla whey protein concentrate powderli
-                  liSweetener to taste 14 part date paste or agave nectarli
-                ul
-              div
-            div
-          div
-          div class=col-md-6
-            div class=card h-100
-              div class=card-header bg-dark text-white
-                h5 class=mb-0Outer Chocolate Layerh5
-              div
-              div class=card-body
-                ul class=mb-0
-                  liHigh cacao dark chocolate (70% or higher, lower sugar)li
-                  liCoconut oil (to ensure a crisp, smooth coating)li
-                ul
-              div
-            div
-          div
-        div
-      section
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <span class="nutri-badge">~280 kcal / 100g</span>
+            <span class="nutri-badge">20g protein / 100g</span>
+            <span class="nutri-badge">Zesty lime profile</span>
+          </div>
 
-      !-- Recipe --
-      section id=recipe class=mb-5
-        h2 class=section-title mb-3Recipe (DIY)h2
-        div class=card
-          div class=card-body
-            p class=mb-0
-              The process involves homogenizing the lime purée, Greek yogurtcream base,
-              whey protein, and sweeteners, flash-freezing the mix into a stable core,
-              and then enrobing the core in a temperature-controlled dark chocolate and
-              coconut oil compound coating.
-            p
-          div
-        div
-      section
+          <a href="index.html" class="btn btn-light btn-sm rounded-pill me-2 mb-2">← Back to Home</a>
+          <a href="#ingredients" class="btn btn-outline-light btn-sm rounded-pill mb-2">View ingredients</a>
+        </div>
 
-      !-- Nutrition --
-      section id=nutrition
-        h2 class=section-title mb-3Nutritional Figures (Estimated per 100g)h2
-        div class=row g-3
-          div class=col-md-3
-            div class=card text-center h-100
-              div class=card-body
-                h6 class=text-muted mb-1Caloriesh6
-                p class=fs-4 fw-bold mb-0280 kcalp
-              div
-            div
-          div
-          div class=col-md-3
-            div class=card text-center h-100
-              div class=card-body
-                h6 class=text-muted mb-1Proteinh6
-                p class=fs-4 fw-bold mb-020 gp
-              div
-            div
-          div
-          div class=col-md-3
-            div class=card text-center h-100
-              div class=card-body
-                h6 class=text-muted mb-1Sugars  Fatsh6
-                p class=mb-0strong8 gstrong natural sugarsp
-                p class=mb-0strong12 gstrong healthy fatsp
-              div
-            div
-          div
-          div class=col-md-3
-            div class=card text-center h-100
-              div class=card-body
-                h6 class=text-muted mb-1Carbsh6
-                p class=fs-4 fw-bold mb-025 gp
-              div
-            div
-          div
-        div
-      section
+        <div class="col-lg-6">
+          <div class="img-placeholder">
+            Product image goes here.<br>
+            Replace this box with an &lt;img&gt; of your Lime Lift bar.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    div
-  main
+  <!-- CONTENT -->
+  <main class="py-5">
+    <div class="container">
 
-  !-- FOOTER --
-  footer
-    div class=container
-      div class=d-flex flex-column flex-md-row justify-content-between align-items-center gap-2
-        p class=mb-0 small
-          &copy; span id=yearspan FrostyFuel&reg;. All rights reserved.
-        p
-        p class=mb-0 small
-          Lime Lift • Refreshing lime-chocolate protein bar.
-        p
-      div
-    div
-  footer
+      <!-- INGREDIENTS -->
+      <section id="ingredients" class="mb-5">
+        <h2 class="section-title mb-3">Ingredients</h2>
 
-  script src=httpscdn.jsdelivr.netnpmbootstrap@5.3.3distjsbootstrap.bundle.min.jsscript
-  script
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-header bg-success text-white">
+                <h5 class="mb-0">Inner Ice Cream Layer</h5>
+              </div>
+              <div class="card-body">
+                <ul class="mb-0">
+                  <li>1 part frozen <strong>lime purée</strong></li>
+                  <li>1 part Greek yogurt or coconut cream</li>
+                  <li>1/2 part vanilla whey protein</li>
+                  <li>Sweetener: 1/4 part date paste or agave</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-header bg-dark text-white">
+                <h5 class="mb-0">Outer Chocolate Layer</h5>
+              </div>
+              <div class="card-body">
+                <ul class="mb-0">
+                  <li>High-cacao dark chocolate (70% or higher)</li>
+                  <li>Coconut oil for smooth coating</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- RECIPE -->
+      <section id="recipe" class="mb-5">
+        <h2 class="section-title mb-3">Recipe (DIY)</h2>
+        <div class="card">
+          <div class="card-body">
+            The lime purée, yogurt/cream base, protein, and sweeteners are homogenized,
+            flash-frozen into a stable core, then enrobed in temperature-controlled dark chocolate.
+          </div>
+        </div>
+      </section>
+
+      <!-- NUTRITION -->
+      <section id="nutrition">
+        <h2 class="section-title mb-3">Nutritional Figures (per 100g)</h2>
+
+        <div class="row g-3">
+
+          <div class="col-md-3">
+            <div class="card text-center h-100">
+              <div class="card-body">
+                <h6 class="text-muted mb-1">Calories</h6>
+                <p class="fs-4 fw-bold mb-0">280 kcal</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card text-center h-100">
+              <div class="card-body">
+                <h6 class="text-muted mb-1">Protein</h6>
+                <p class="fs-4 fw-bold mb-0">20 g</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card text-center h-100">
+              <div class="card-body">
+                <h6 class="text-muted mb-1">Sugars & Fats</h6>
+                <p class="mb-0"><strong>8 g</strong> natural sugars</p>
+                <p class="mb-0"><strong>12 g</strong> healthy fats</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card text-center h-100">
+              <div class="card-body">
+                <h6 class="text-muted mb-1">Carbs</h6>
+                <p class="fs-4 fw-bold mb-0">25 g</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0 small">&copy; <span id="year"></span> FrostyFuel® — All rights reserved.</p>
+        <p class="mb-0 small">Lime Lift • Refreshing lime-chocolate protein bar.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-  script
-body
-html
+  </script>
+
+</body>
+</html>
