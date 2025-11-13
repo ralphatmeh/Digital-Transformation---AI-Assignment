@@ -1,3 +1,10 @@
-Welcome to FrostyFuel!
+***************************************
+Welcome to FrostyFuel official webpage!
+***************************************
 
-Make sure to run: index.html
+INSTRUCTIONS
+
+   1. Download the the content as ZIP file.
+   2. Open the file
+   3. Make sure to run: index.html
+
